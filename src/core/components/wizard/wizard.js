@@ -34,6 +34,9 @@ const useStyles = makeStyles(theme => ({
     },
     nextbutton: {
         float: 'right',
+    },
+    main: {
+        marginTop: '40px'
     }
 
   }));
@@ -126,7 +129,7 @@ export default function Wizard(props) {
         <React.Fragment>
             <CssBaseline />
             <Container maxWidth="lg">
-            <Grid container spacing={2}>
+            <Grid container spacing={2} className={classes.main}>
                 <Grid item xs={12}>
                     <Paper className={classes.paper}>
                         <LinearProgress variant="determinate" value={((stepNumber + 1) * 20)} />
